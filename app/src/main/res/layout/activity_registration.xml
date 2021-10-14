@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reg"
+    android:orientation="vertical"
+    android:padding="40dp"
+    tools:context=".Registration">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="306dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="SignUp Form"
+        android:layout_gravity="center"
+        android:fontFamily="@font/rubikbold"
+        android:textColor="@color/background"
+        android:textFontWeight="15"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="5dp"
+        >
+
+        <EditText
+            android:id="@+id/username2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:textColor="@color/background"
+            android:fontFamily="@font/rubikregular"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="5dp"
+
+        app:passwordToggleEnabled="true"
+        >
+
+        <EditText
+            android:id="@+id/Password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:textColor="@color/background"
+            android:fontFamily="@font/rubikregular"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:text="Register"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+
+        />
+
+    <TextView
+        android:id="@+id/Already_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Already HAve an account? Login?"
+        android:textColor="@color/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.985" />
+
+</LinearLayout>
